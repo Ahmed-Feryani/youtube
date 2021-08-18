@@ -1,0 +1,62 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: white;
+  &__menu {
+    margin-right: 1rem;
+    svg {
+      font-size: 2.5rem;
+    }
+  }
+  &__logo-box {
+    display: flex;
+    align-items: center;
+  }
+  &__search {
+    display: flex;
+    height: 3.2rem;
+    input {
+      width: 56.2rem;
+      height: 100%;
+    }
+    &-btn {
+      width: 5.1rem;
+      height: 100%;
+      background: transparent;
+      outline: none;
+      border: 1px solid;
+    }
+  }
+  &__action {
+    display: flex;
+    &__item {
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+      svg {
+        font-size: 2.5rem;
+      }
+    }
+    &__profile {
+      width: 3.2rem;
+      height: 3.2rem;
+      border-radius: 50%;
+      background: #0098a6;
+      color: #fff;
+      font-size: 2rem;
+    }
+  }
+}
+
+.logo {
+  img {
+    width: 100px;
+  }
+}
